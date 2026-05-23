@@ -1,0 +1,135 @@
+/* ==========================================================================
+   TABLET RESPONSIVE REFINEMENTS (Viewport >= 640px)
+   ========================================================================== */
+@media (min-width: 40rem) {
+    #menu-toggle {
+        display: none; /* Hide mobile menu toggle completely */
+    }
+
+    nav {
+        display: block !important;
+        width: auto;
+    }
+
+    nav ul {
+        display: flex;
+        gap: 1.5rem;
+        margin: 0;
+    }
+
+    nav ul li a {
+        border-bottom: none;
+        padding: 0.5rem 0;
+    }
+
+    .directory-hero {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 1.5rem 2rem;
+    }
+
+    /* Transform directory container into two steady grid layout columns */
+    #directory-container.grid-layout {
+        grid-template-columns: repeat(2, 1fr);
+        padding: 2rem;
+    }
+}
+
+/* ==========================================================================
+   DESKTOP RESPONSIVE REFINEMENTS (Viewport >= 1024px)
+   ========================================================================== */
+@media (min-width: 64rem) {
+    /* 1. Grid View Structure Overhaul */
+    #directory-container.grid-layout {
+        grid-template-columns: repeat(3, 1fr); /* Pristine 3-column layout grid */
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* FIXES SPILLED ROW BEHAVIOR: Forces complete vertical internal container blocking */
+    #directory-container.grid-layout .member-card {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between; /* Keeps buttons cleanly aligned at baseline */
+        align-items: center;
+        text-align: center;
+        padding: 2rem;
+    }
+
+    #directory-container.grid-layout .member-details p {
+        margin: 0.5rem 0;
+        width: 100%;
+    }
+
+
+    /* 2. List View Structure Overhaul */
+    #directory-container.list-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 0.75rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    /* Rows stretch gracefully into uniform strips straight across the browser view */
+    #directory-container.list-layout .member-card {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 1rem 2rem;
+        background-color: #ffffff;
+    }
+
+    #directory-container.list-layout .member-card img {
+        display: none; /* Hides logos in list mode per wireframe specifications */
+    }
+
+    /* Spreads business names, tags, address properties side-by-side cleanly */
+    #directory-container.list-layout .member-details {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        gap: 2rem;
+    }
+
+    #directory-container.list-layout .member-details h3 {
+        width: 20%;
+        margin: 0;
+    }
+
+    #directory-container.list-layout .member-details .tagline {
+        width: 25%;
+        margin: 0;
+    }
+
+    #directory-container.list-layout .member-details p {
+        margin: 0;
+        font-size: 0.9rem;
+    }
+
+    #directory-container.list-layout .badge {
+        margin-top: 0;
+        white-space: nowrap;
+    }
+
+
+    /* 3. Footer Desktop Positioning Adjustments */
+    footer {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 2rem 4rem;
+    }
+
+    .footer-dev-info {
+        border-top: none;
+        padding-top: 0;
+        text-align: right;
+    }
+}

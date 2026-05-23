@@ -1,0 +1,264 @@
+/* ==========================================================================
+   1. GLOBAL LAYOUT, RESETS & SCROLLING SAFETY
+   ========================================================================== */
+html {
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden; /* Stops horizontal side-scrolling bugs completely */
+    margin: 0;
+    padding: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    color: #222222;
+}
+
+img {
+    max-width: 100%;
+    height: auto; /* Stops images from blowing out of containment panels */
+}
+
+/* ==========================================================================
+   2. HEADER & NAVIGATION LAYOUT
+   ========================================================================== */
+header {
+    background-color: #1e4620; /* Deep Nairobi Forest Green */
+    color: #ffffff;
+    padding: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.logo-area h1 {
+    margin: 0;
+    font-size: 1.4rem;
+    letter-spacing: 0.5px;
+}
+
+.logo-area p {
+    margin: 0;
+    font-size: 0.85rem;
+    color: #c29200; /* Warm Sun Ochre Gold */
+    font-weight: bold;
+}
+
+#menu-toggle {
+    background: none;
+    border: none;
+    color: #ffffff;
+    font-size: 1.8rem;
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+nav {
+    display: none; /* Collapsed by default on mobile */
+    width: 100%;
+}
+
+nav.open {
+    display: block; /* Toggled via JavaScript */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0 0 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    padding: 0.8rem;
+    text-decoration: none;
+    font-weight: 500;
+    border-bottom: 1px solid #2a5e2d;
+    transition: background 0.3s ease;
+}
+
+nav ul li a:hover, nav ul li a.active {
+    color: #c29200;
+    background-color: #153317;
+}
+
+/* ==========================================================================
+   3. DIRECTORY HERO CONTROL PANEL
+   ========================================================================== */
+.directory-hero {
+    padding: 1.2rem 1rem;
+    background-color: #eaeaea;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.directory-hero h2 {
+    margin: 0;
+    font-size: 1.6rem;
+    color: #1e4620;
+}
+
+.toggle-buttons {
+    display: flex;
+    gap: 0.5rem;
+}
+
+.toggle-buttons button {
+    padding: 0.6rem 1.2rem;
+    cursor: pointer;
+    background-color: #ffffff;
+    border: 1px solid #cccccc;
+    font-weight: bold;
+    border-radius: 4px;
+    transition: all 0.2s ease;
+}
+
+.toggle-buttons button.active {
+    background-color: #1e4620;
+    color: #ffffff;
+    border-color: #1e4620;
+}
+
+/* ==========================================================================
+   4. DATA DIRECTORY CONTAINER & CARD DEFINITIONS
+   ========================================================================== */
+#directory-container {
+    padding: 1.5rem 1rem;
+    display: grid;
+    gap: 1.5rem;
+    grid-template-columns: 1fr; /* Single column stack on mobile devices */
+}
+
+/* Base Card Style: Keeps content stacked and perfectly safe */
+.member-card {
+    background: #ffffff;
+    border: 1px solid #dddddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.05);
+    height: auto;
+    display: flex;
+    flex-direction: column; /* FORCES VERTICAL STACKING ON MOBILE */
+    align-items: center;
+    text-align: center;
+}
+
+.member-card img {
+    max-width: 130px;
+    height: auto;
+    margin-bottom: 1rem;
+    object-fit: contain;
+}
+
+.member-details {
+    width: 100%;
+}
+
+.member-details h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 1.25rem;
+    color: #1e4620;
+}
+
+.member-details .tagline {
+    color: #555555;
+    font-size: 0.95rem;
+    margin: 0 0 1rem 0;
+}
+
+.member-details p {
+    margin: 0.4rem 0;
+    font-size: 0.9rem;
+    line-height: 1.4;
+}
+
+.member-details a {
+    color: #0369a1;
+    text-decoration: none;
+    word-break: break-all; /* Prevents long URLs from escaping the card edges */
+}
+
+.member-details a:hover {
+    text-decoration: underline;
+}
+
+/* Membership Badges */
+.badge {
+    display: inline-block;
+    padding: 0.4rem 0.8rem;
+    font-size: 0.8rem;
+    border-radius: 4px;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+.tier-gold { background-color: #fff4d4; color: #8a6700; border: 1px solid #c29200; }
+.tier-silver { background-color: #e2e2e2; color: #444444; border: 1px solid #cccccc; }
+.tier-member { background-color: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
+
+/* ==========================================================================
+   5. FOOTER ARCHITECTURE
+   ========================================================================== */
+footer {
+    background-color: #1a1a1a;
+    color: #dddddd;
+    padding: 2rem 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+footer h3 {
+    color: #ffffff;
+    margin: 0 0 0.5rem 0;
+}
+
+footer p {
+    margin: 0.2rem 0;
+}
+
+.footer-socials {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.footer-socials a {
+    color: #c29200;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-socials a:hover {
+    color: #ffffff;
+}
+
+.footer-dev-info {
+    border-top: 1px solid #333333;
+    padding-top: 1rem;
+    color: #888888;
+    font-size: 0.8rem;
+}
+
+.footer-dev-info span {
+    color: #cccccc;
+}

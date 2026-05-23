@@ -1,0 +1,65 @@
+[
+  {
+    "name": "Nairobi Coffee Roasters",
+    "address": "Coffee Plaza, Exchange Lane, Nairobi",
+    "phone": "+254 20 123 4567",
+    "website": "https://nairobicoffeeroasters.co.ke",
+    "image": "images/coffee-roasters.png",
+    "membership": 3,
+    "tagline": "Sourcing the finest AA Kenyan beans."
+  },
+  {
+    "name": "Safari Horizon Elements",
+    "address": "Maji Mazuri Rd, Nairobi",
+    "phone": "+254 711 222 333",
+    "website": "https://safarihorizon.com",
+    "image": "images/safari-horizon.png",
+    "membership": 2,
+    "tagline": "Unforgettable Maasai Mara experiences."
+  },
+  {
+    "name": "Kilimani Tech Hub",
+    "address": "Chania Avenue, Kilimani, Nairobi",
+    "phone": "+254 722 000 111",
+    "website": "https://kilimanitech.io",
+    "image": "images/kilimani-tech.png",
+    "membership": 3,
+    "tagline": "Incubating Africa's next unicorn startups."
+  },
+  {
+    "name": "Green City Landscaping",
+    "address": "Ngong Road, Nairobi",
+    "phone": "+254 733 444 555",
+    "website": "https://greencitylandscapes.co.ke",
+    "image": "images/green-city.png",
+    "membership": 1,
+    "tagline": "Keeping Nairobi beautifully green."
+  },
+  {
+    "name": "Karura Eco Lodge",
+    "address": "Limuru Road, Karura, Nairobi",
+    "phone": "+254 20 987 6543",
+    "website": "https://karuraecolodge.com",
+    "image": "images/karura-lodge.png",
+    "membership": 2,
+    "tagline": "Serenity next to the urban forest."
+  },
+  {
+    "name": "Uhuru Law Chambers",
+    "address": "Kenyatta Avenue, CBD, Nairobi",
+    "phone": "+254 20 555 0100",
+    "website": "https://uhurulaw.co.ke",
+    "image": "images/uhuru-law.png",
+    "membership": 1,
+    "tagline": "Corporate law experts you can trust."
+  },
+  {
+    "name": "Gikomba Textiles Ltd",
+    "address": "Landhies Road, Nairobi",
+    "phone": "+254 700 888 999",
+    "website": "https://gikombatextiles.com",
+    "image": "images/gikomba-textiles.png",
+    "membership": 3,
+    "tagline": "East Africa's premier fabric distributors."
+  }
+]
