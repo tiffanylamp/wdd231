@@ -1,0 +1,55 @@
+@media only screen and (min-width: 48rem) {
+    /* Hide Mobile Hamburgers */
+    .hamburger {
+        display: none;
+    }
+
+    /* Convert Navigation Bar to Horizontal Display Flex */
+    .navigation {
+        display: block !important;
+        background-color: #333;
+    }
+
+    .navigation ul {
+        display: flex;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding-left: 1rem;
+    }
+
+    .navigation a {
+        border-bottom: none;
+        padding: 0.75rem 1.5rem;
+    }
+
+    .navigation li.current a {
+        border-left: none;
+        border-bottom: 4px solid var(--accent-color);
+        background-color: #444;
+    }
+
+    /* Grid Layout Structure for Desktop main contents */
+    .content-wrapper {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
+
+    /* Align columns gracefully */
+    .about-me, .student-photo {
+        margin-bottom: 0;
+    }
+
+    /* Convert course list into dynamic grid format columns horizontally */
+    .course-list {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .course {
+        flex: 1 1 calc(33.333% - 1rem);
+        max-width: calc(33.333% - 1rem);
+    }
+}

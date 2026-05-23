@@ -3,11 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BYU IDAHO CLASS </title>
+    <title>WDD 231 - Web Frontend Development - Tiffany Lalampaa</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development - By Tiffany Lalampaa is a landing page of my website">
+    <meta name="author" content="Tiffany Lalampaa WDD 231">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
 </head>
 <body>
 
-    <h1>Testing the environment and adding github pages</h1>
-    
+    <header>
+        <div class="header-title-container">
+            <img src="images/graduation-cap.svg" alt="logo" width="24" height="24">
+            <span>Site Name</span>
+        </div>
+        <button id="ham-btn" class="hamburger" aria-label="Toggle Navigation"></button>
+    </header>
+
+    <nav id="nav-bar" class="navigation">
+        <ul>
+          <li class="current"><a href="#">Home</a></li>
+          <li><a href="#">Chamber Project</a></li>
+          <li><a href="#">Final Project</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <h1 class="main-title">Home</h1>
+        
+        <div class="content-wrapper">
+            <section class="about-me">
+                <h2>About Me</h2>
+                <div class="section-content">
+                    <p>
+                        My name is Tiffany. I was born in Kenya and live with my family in Nairobi. 
+                        I come from a big family of six. To pass time, I like visiting art galleries and cute cafes. 
+                        I also prefer to write in my journal when I'm not busy studying. I love flowers and nature, you could say my aesthetic is 
+                        "earth girl". I am very interested in investigative media like TV series and 
+                        documentaries.
+                    </p>
+                </div>
+            </section>
+            
+            <section class="student-photo">
+                <h2>Student Photo</h2>
+                <div class="section-content img-container">
+                    <img src="images/Tiffanyx.jpg" alt="Student Photo - Tiffany" width="200" height="200" />
+                </div>
+            </section>
+        </div>
+        
+        <section class="web-courses">
+            <h2>Web Certificate Courses</h2>
+            <div class="section-content">
+                <div class="course-buttons">
+                    <button id="btn-all" class="filter-btn active">All</button>
+                    <button id="btn-cse" class="filter-btn">CSE</button>
+                    <button id="btn-wdd" class="filter-btn">WDD</button>
+                </div>
+            
+                <div id="course-list-container" class="course-list"></div>
+            
+                <p class="credits">The total credits for courses listed above is <span id="total-credits">0</span></p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="social-links">
+            <a href="https://linkedin.com" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/174/174857.png" alt="LinkedIn" width="30"></a>
+            <a href="https://github.com" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="30"></a>
+            <a href="https://x.com" target="_blank" rel="noopener"><img src="https://cdn-icons-png.flaticon.com/512/733/733579.png" alt="X" width="30"></a>
+        </div>
+        <p>&copy; <span id="currentyear"></span> • Tiffany Lalampaa • Kenya, Nairobi</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
