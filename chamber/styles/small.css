@@ -213,11 +213,11 @@ nav ul li a:hover, nav ul li a.active {
 .tier-member { background-color: #e0f2fe; color: #0369a1; border: 1px solid #bae6fd; }
 
 /* ==========================================================================
-   5. FOOTER ARCHITECTURE
+   5. FOOTER ARCHITECTURE 
    ========================================================================== */
 footer {
-    background-color: #1a1a1a;
-    color: #dddddd;
+    background-color: #1a1a1a; /* Dark charcoal background from wireframe */
+    color: #dddddd;            /* Light gray body text */
     padding: 2rem 1rem;
     text-align: center;
     display: flex;
@@ -225,10 +225,11 @@ footer {
     gap: 1.5rem;
     font-size: 0.9rem;
     line-height: 1.6;
+    width: 100%;
 }
 
 footer h3 {
-    color: #ffffff;
+    color: #ffffff;            /* Crisp white headings */
     margin: 0 0 0.5rem 0;
 }
 
@@ -236,29 +237,47 @@ footer p {
     margin: 0.2rem 0;
 }
 
+/* Social links container */
 .footer-socials {
     display: flex;
     justify-content: center;
     gap: 1.5rem;
+    margin: 1rem 0;
 }
 
+/* Styling the social media links text */
 .footer-socials a {
-    color: #c29200;
+    color: #ffffff;            /* White text letters inside the circle */
+    background-color: #c29200; /* Nairobi Sun Gold circle background */
     text-decoration: none;
     font-weight: bold;
+    font-size: 0.9rem;
+    
+    /*  wireframe circle */
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;        /* Forces the box into a perfect circle */
+    
+    transition: all 0.3s ease;
 }
 
 .footer-socials a:hover {
-    color: #ffffff;
+    background-color: #ffffff; /* Flips background to white on hover */
+    color: #1a1a1a;            /* Changes text to dark gray on hover */
+    text-decoration: none;     /* Removes underlines completely */
 }
 
+/* Development details area */
 .footer-dev-info {
     border-top: 1px solid #333333;
     padding-top: 1rem;
-    color: #888888;
-    font-size: 0.8rem;
+    color: #b3b3b3; /* CHANGED FROM #888888 */
+    font-size: 0.85rem;
 }
 
 .footer-dev-info span {
-    color: #cccccc;
+    color: #ffffff; 
 }

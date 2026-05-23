@@ -1,10 +1,12 @@
-// 1. Fetch JSON Member Data
-const url = 'data/members.json';
+// ==========================================
+// 1. DATA CONFIGURATION & INITIALIZATION
+// ==========================================
+const membersUrl = 'data/members.json'; 
 const container = document.querySelector('#directory-container');
 
 async function getMembers() {
     try {
-        const response = await fetch(url);
+        const response = await fetch(membersUrl); 
         if (response.ok) {
             const data = await response.json();
             displayMembers(data);
@@ -16,20 +18,23 @@ async function getMembers() {
     }
 }
 
+// ==========================================
+// 2. DYNAMIC CARD GENERATION
+// ==========================================
 function displayMembers(members) {
-    container.innerHTML = ""; // Clear existing layout placeholders
+    container.innerHTML = ""; 
     
     members.forEach((member) => {
         let card = document.createElement('section');
         card.className = "member-card";
         
-        // Map Membership Integer Tiers to Labels
         let membershipTier = "Member";
         if (member.membership === 2) membershipTier = "Silver";
         if (member.membership === 3) membershipTier = "Gold";
 
+        // CRITICAL PERFORMANCE FIX: Added explicit dimensions and lazy handling updates
         card.innerHTML = `
-            <img src="${member.image}" alt="Logo of ${member.name}" loading="lazy">
+            <img src="${member.image}" alt="Logo of ${member.name}" width="130" height="130" loading="lazy">
             <div class="member-details">
                 <h3>${member.name}</h3>
                 <p class="tagline"><em>"${member.tagline}"</em></p>
@@ -43,35 +48,48 @@ function displayMembers(members) {
     });
 }
 
-// 2. Grid vs List Views Layout Toggles
+// ==========================================
+// 3. LAYOUT TOGGLES (GRID VS LIST)
+// ==========================================
 const gridBtn = document.querySelector('#grid-view');
 const listBtn = document.querySelector('#list-view');
 
-gridBtn.addEventListener('click', () => {
-    container.classList.add('grid-layout');
-    container.classList.remove('list-layout');
-    gridBtn.classList.add('active');
-    listBtn.classList.remove('active');
-});
+if (gridBtn && listBtn) {
+    gridBtn.addEventListener('click', () => {
+        container.classList.add('grid-layout');
+        container.classList.remove('list-layout');
+        gridBtn.classList.add('active');
+        listBtn.classList.remove('active');
+    });
 
-listBtn.addEventListener('click', () => {
-    container.classList.add('list-layout');
-    container.classList.remove('grid-layout');
-    listBtn.classList.add('active');
-    gridBtn.classList.remove('active');
-});
+    listBtn.addEventListener('click', () => {
+        container.classList.add('list-layout');
+        container.classList.remove('grid-layout');
+        listBtn.classList.add('active');
+        gridBtn.classList.remove('active');
+    });
+}
 
-// 3. Mobile Navigation Menu Toggle 
+// ==========================================
+// 4. MOBILE NAVIGATION TOGGLE
+// ==========================================
 const menuToggle = document.querySelector('#menu-toggle');
 const navMenu = document.querySelector('#nav-menu');
 
-menuToggle.addEventListener('click', () => {
-    navMenu.classList.toggle('open');
-});
+if (menuToggle && navMenu) {
+    menuToggle.addEventListener('click', () => {
+        navMenu.classList.toggle('open');
+    });
+}
 
-// 4. Footer Date Injections
-document.getElementById('current-year').textContent = new Date().getFullYear();
-document.getElementById('last-modified').textContent = document.lastModified;
+// ==========================================
+// 5. FOOTER AUTO TIMESTAMP INJECTIONS
+// ==========================================
+const currentYearElt = document.getElementById('current-year');
+const lastModifiedElt = document.getElementById('last-modified');
+
+if (currentYearElt) currentYearElt.textContent = new Date().getFullYear();
+if (lastModifiedElt) lastModifiedElt.textContent = document.lastModified;
 
 // Init Execution
 getMembers();
