@@ -133,3 +133,74 @@
         text-align: right;
     }
 }
+
+/* ==========================================================================
+   DESKTOP HOME PAGE GRID LAYOUT (Viewport >= 64rem)
+   ========================================================================== */
+@media (min-width: 64rem) {
+    .home-grid {
+        display: grid;
+        grid-template-columns: 2fr 1fr;
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 1rem;
+    }
+
+    /* Hero stretches entirely across both columns */
+    .hero-block {
+        grid-column: 1 / span 2;
+        position: relative;
+        border-radius: 8px;
+        overflow: hidden;
+    }
+
+    /* Hero Banner Text Overlay */
+    .cta-overlay {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(26, 26, 26, 0.85);
+        color: #ffffff;
+        padding: 2rem;
+        text-align: left;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background-color: #c29200;
+        color: #ffffff;
+        padding: 0.75rem 1.5rem;
+        text-decoration: none;
+        font-weight: bold;
+        border-radius: 4px;
+        margin-top: 1rem;
+    }
+    
+    .cta-button:hover {
+        background-color: #ffffff;
+        color: #1e4620;
+    }
+
+    /* Base Styling Card elements */
+    .home-card {
+        background-color: #ffffff;
+        padding: 1.5rem;
+        border-radius: 8px;
+        border: 1px solid #dddddd;
+        box-shadow: 0 3px 6px rgba(0,0,0,0.05);
+    }
+
+    /* Member spotlight cards layout wrapper */
+    .spotlight-container {
+        grid-column: 1 / span 2;
+    }
+
+    #spotlight-cards-wrapper {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1.5rem;
+        margin-top: 1rem;
+    }
+}

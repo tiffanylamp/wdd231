@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Chamber of Commerce | Home</title>
+    <meta name="description" content="Welcome to the Nairobi Chamber of Commerce. Connecting, growing, and empowering businesses across Kenya.">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/nairobi-logo.jpeg" alt="Nairobi Chamber Logo" width="50" height="50">
+            <div>
+                <h1>Nairobi Chamber</h1>
+                <p>of Commerce</p>
+            </div>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="home-grid">
+        
+        <section class="hero-block">
+            <picture>
+                <source media="(min-width: 60rem)" srcset="images/hero-large.jpg">
+                <img src="images/hero-small.jpg" alt="Nairobi Skyline Business District" width="1200" height="450" loading="eager">
+            </picture>
+            <div class="cta-overlay">
+                <h2>Empowering Nairobi's Economy</h2>
+                <p>Join the network driving innovation and trade across East Africa.</p>
+                <a href="#" class="cta-button">Join the Chamber Today</a>
+            </div>
+        </section>
+
+        <section class="home-card events-card">
+            <h2>Upcoming Events</h2>
+            <hr>
+            <div class="event-item">
+                <span class="event-date">June 05</span>
+                <p><strong>East Africa Trade Expo 2026</strong> - KICC Main Hall</p>
+            </div>
+            <div class="event-item">
+                <span class="event-date">June 18</span>
+                <p><strong>SME Digital Marketing Masterclass</strong> - Virtual Webinar</p>
+            </div>
+        </section>
+
+        <section class="home-card weather-card">
+            <h2>Chamber Weather</h2>
+            <hr>
+            <div id="current-weather">
+                <p>Loading current atmospheric conditions...</p>
+            </div>
+            <div id="weather-forecast">
+                </div>
+        </section>
+
+        <section class="spotlight-container">
+            <h2>Member Spotlights</h2>
+            <div id="spotlight-cards-wrapper">
+                <p>Loading verified partners...</p>
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h3>Nairobi Chamber of Commerce</h3>
+            <p>10 Harambee Avenue, City Centre</p>
+            <p>Nairobi, Kenya 00100</p>
+            <p>info@nairobichamber.or.ke</p>
+            <p>+254 20 222 1111</p>
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://youtube.com" target="_blank" aria-label="Nairobi Chamber YouTube">▶</a>
+            <a href="https://x.com" target="_blank" aria-label="Nairobi Chamber X Twitter">𝕏</a>
+            <a href="https://linkedin.com" target="_blank" aria-label="Nairobi Chamber LinkedIn">in</a>
+        </div>
+
+        <div class="footer-dev-info">
+            <p>WDD231 Class Project</p>
+            <p>Author: <span>Tiffany Lalampaa</span></p>
+            <p>&copy; <span id="current-year"></span> Nairobi Chamber of Commerce</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/home.js" defer></script>
+</body>
+</html>
