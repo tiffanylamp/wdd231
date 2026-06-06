@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Received | Nairobi Chamber</title>
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/nairobi-logo.jpeg" alt="Nairobi Chamber Logo" width="50" height="50">
+            <h1>Nairobi Chamber</h1>
+        </div>
+    </header>
+
+    <main style="max-width: 800px; margin: 3rem auto; padding: 0 1rem; text-align: center;">
+        <h2 style="color: #1e4620;">Thank You for Registering!</h2>
+        <p>Your application parameters have been recorded successfully. Our reviewing panel will get in touch shortly.</p>
+        
+        <section id="summary-box" style="background: #fff; padding: 2rem; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); margin-top: 2rem; text-align: left;">
+            <h3 style="border-bottom: 2px solid #c29200; padding-bottom: 0.5rem; margin-top: 0;">Submission Details Summary</h3>
+            <div id="results-display">Parsing secure transport vectors...</div>
+        </section>
+
+        <a href="index.html" class="cta-button" style="display: inline-block; margin-top: 2rem;">Return Home</a>
+    </main>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Read parameters from URL query string
+            const urlParams = new URLSearchParams(window.location.search);
+            const display = document.getElementById('results-display');
+
+            if (urlParams.has('firstName')) {
+                // Formatting out values cleanly securely safely
+                display.innerHTML = `
+                    <p><strong>First Name:</strong> ${urlParams.get('firstName')}</p>
+                    <p><strong>Last Name:</strong> ${urlParams.get('lastName')}</p>
+                    <p><strong>Email Address:</strong> ${urlParams.get('email')}</p>
+                    <p><strong>Mobile Contact:</strong> ${urlParams.get('phone')}</p>
+                    <p><strong>Organization Name:</strong> ${urlParams.get('organization')}</p>
+                    <p><strong>Membership Level Tier Selection:</strong> ${urlParams.get('membershipLevel').toUpperCase()}</p>
+                    <p style="font-size: 0.85rem; color: #666; margin-top: 1.5rem;">
+                        <strong>Form Loaded Timestamp String Reference Value:</strong><br>${urlParams.get('timestamp')}
+                    </p>
+                `;
+            } else {
+                display.innerHTML = `<p style="color: red;">No application form parameter streams detected.</p>`;
+            }
+        });
+    </script>
+</body>
+</html>

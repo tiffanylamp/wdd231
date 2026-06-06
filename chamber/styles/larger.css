@@ -204,3 +204,14 @@
         margin-top: 1rem;
     }
 }
+
+@media (min-width: 64rem) {
+    /* Side-by-Side Split: Form left, Info Cards right */
+    .join-grid {
+        display: grid;
+        grid-template-columns: 3fr 2fr;
+        max-width: 1200px;
+        margin: 2rem auto;
+        gap: 3rem;
+    }
+}

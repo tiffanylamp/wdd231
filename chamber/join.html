@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Chamber of Commerce | Join Us</title>
+    <meta name="description" content="Apply for a membership with the Nairobi Chamber of Commerce to grow your business network.">
+    <link rel="icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/nairobi-logo.jpeg" alt="Nairobi Chamber Logo" width="50" height="50">
+            <div>
+                <h1>Nairobi Chamber</h1>
+                <p>of Commerce</p>
+            </div>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html" class="active">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="join-grid">
+        <section class="form-container">
+            <h2>Membership Application</h2>
+            <form method="get" action="thankyou.html">
+                <label>First Name *
+                    <input type="text" name="firstName" autocomplete="given-name" required title="Applicant's given name">
+                </label>
+
+                <label>Last Name *
+                    <input type="text" name="lastName" autocomplete="family-name" required title="Applicant's family name">
+                </label>
+
+                <label>Organizational Title
+                    <input type="text" name="orgTitle" autocomplete="organization-title" 
+                           pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters. Letters, spaces, and hyphens only.">
+                </label>
+
+                <label>Email Address *
+                    <input type="email" name="email" autocomplete="email" required placeholder="example@domain.com" title="Valid company or personal email address">
+                </label>
+
+                <label>Mobile Phone *
+                    <input type="tel" name="phone" autocomplete="tel" required title="Applicant's direct contact phone number">
+                </label>
+
+                <label>Business/Organization Name *
+                    <input type="text" name="organization" autocomplete="organization" required title="Official legal name of business">
+                </label>
+
+                <label>Membership Level *
+                    <select name="membershipLevel" required title="Select your desired level of investment">
+                        <option value="" disabled selected>Select a level...</option>
+                        <option value="np">NP Membership (Non-Profit - Free)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </label>
+
+                <label>Business Description
+                    <textarea name="description" rows="4" title="Brief statement describing your industry or operations"></textarea>
+                </label>
+
+                <input type="hidden" name="timestamp" id="form-timestamp">
+
+                <input type="submit" value="Submit Application" class="submit-btn">
+            </form>
+        </section>
+
+        <section class="cards-container">
+            <h2>Membership Levels</h2>
+            
+            <div class="membership-card animated-card" style="--delay: 1;">
+                <h3>Non-Profit (NP)</h3>
+                <button type="button" class="info-btn" data-modal="modal-np">Learn Benefits &rarr;</button>
+            </div>
+
+            <div class="membership-card animated-card" style="--delay: 2;">
+                <h3>Bronze Partner</h3>
+                <button type="button" class="info-btn" data-modal="modal-bronze">Learn Benefits &rarr;</button>
+            </div>
+
+            <div class="membership-card animated-card" style="--delay: 3;">
+                <h3>Silver Partner</h3>
+                <button type="button" class="info-btn" data-modal="modal-silver">Learn Benefits &rarr;</button>
+            </div>
+
+            <div class="membership-card animated-card" style="--delay: 4;">
+                <h3>Gold Partner</h3>
+                <button type="button" class="info-btn" data-modal="modal-gold">Learn Benefits &rarr;</button>
+            </div>
+        </section>
+    </main>
+
+    <dialog id="modal-np">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <h2>NP Membership Benefits</h2>
+        <p>Cost: <strong>Free</strong> (For registered NGOs and community organizations)</p>
+        <ul>
+            <li>Basic directory listing profile layout.</li>
+            <li>Access to monthly networking mixers.</li>
+            <li>Chamber membership badge asset for your website.</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-bronze">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <h2>Bronze Membership Benefits</h2>
+        <p>Cost: <strong>Ksh 15,000 / year</strong></p>
+        <ul>
+            <li>Full business directory listing profile.</li>
+            <li>Discounted entry tickets to regional expos.</li>
+            <li>Access to core training seminars.</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-silver">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <h2>Silver Membership Benefits</h2>
+        <p>Cost: <strong>Ksh 35,000 / year</strong></p>
+        <ul>
+            <li>All Bronze benefits included.</li>
+            <li>10% discount on booth displays at the East Africa Trade Expo.</li>
+            <li>Randomized homepage Spotlight positions rotation pool eligibility.</li>
+        </ul>
+    </dialog>
+
+    <dialog id="modal-gold">
+        <button class="close-modal" aria-label="Close modal">&times;</button>
+        <h2>Gold Membership Benefits</h2>
+        <p>Cost: <strong>Ksh 75,000 / year</strong></p>
+        <ul>
+            <li>All Silver benefits included.</li>
+            <li>Priority continuous homepage Spotlight highlights.</li>
+            <li>VIP seating at signature gala banquets and direct speaker access.</li>
+            <li>Free admission to all digital masterclasses for your team.</li>
+        </ul>
+    </dialog>
+
+    <footer>
+        <div class="footer-contact">
+            <h3>Nairobi Chamber of Commerce</h3>
+            <p>10 Harambee Avenue, City Centre</p>
+            <p>Nairobi, Kenya 00100</p>
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://youtube.com" target="_blank" aria-label="Nairobi Chamber YouTube">▶</a>
+            <a href="https://x.com" target="_blank" aria-label="Nairobi Chamber X Twitter">𝕏</a>
+            <a href="https://linkedin.com" target="_blank" aria-label="Nairobi Chamber LinkedIn">in</a>
+        </div>
+
+        <div class="footer-dev-info">
+            <p>WDD231 Class Project</p>
+            <p>Author: <span>Tiffany Lalampaa</span></p>
+            <p>&copy; <span id="current-year"></span> Nairobi Chamber of Commerce</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script src="scripts/join.js" defer></script>
+</body>
+</html>
