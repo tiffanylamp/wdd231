@@ -205,11 +205,10 @@
     }
 }
 
-/* --- JOIN PAGE DESKTOP SPLIT GRID (Viewport >= 1024px) --- */
 @media (min-width: 64rem) {
     .join-grid {
         display: grid;
-        grid-template-columns: 1.6fr 1fr; /* Form gets more space, cards sit on the right */
+        grid-template-columns: 1.6fr 1fr; /* Form takes up the left, cards sit cleanly on the right */
         max-width: 1200px;
         margin: 2rem auto;
         gap: 3rem;
