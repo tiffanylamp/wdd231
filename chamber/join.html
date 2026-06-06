@@ -46,73 +46,42 @@
         <section class="form-container">
             <h2>Membership Application</h2>
             <form method="get" action="thankyou.html">
-                <label>First Name *
-                    <input type="text" name="firstName" autocomplete="given-name" required title="Applicant's given name">
-                </label>
+                
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" autocomplete="given-name" required title="Applicant's given name">
 
-                <label>Last Name *
-                    <input type="text" name="lastName" autocomplete="family-name" required title="Applicant's family name">
-                </label>
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" autocomplete="family-name" required title="Applicant's family name">
 
-                <label>Organizational Title
-                    <input type="text" name="orgTitle" autocomplete="organization-title" 
-                           pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters. Letters, spaces, and hyphens only.">
-                </label>
+                <label for="orgTitle">Organizational Title</label>
+                <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title" 
+                    pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters. Letters, spaces, and hyphens only.">
 
-                <label>Email Address *
-                    <input type="email" name="email" autocomplete="email" required placeholder="example@domain.com" title="Valid company or personal email address">
-                </label>
+                <label for="email">Email Address *</label>
+                <input type="email" id="email" name="email" autocomplete="email" required placeholder="example@domain.com" title="Valid company or personal email address">
 
-                <label>Mobile Phone *
-                    <input type="tel" name="phone" autocomplete="tel" required title="Applicant's direct contact phone number">
-                </label>
+                <label for="phone">Mobile Phone *</label>
+                <input type="tel" id="phone" name="phone" autocomplete="tel" required title="Applicant's direct contact phone number">
 
-                <label>Business/Organization Name *
-                    <input type="text" name="organization" autocomplete="organization" required title="Official legal name of business">
-                </label>
+                <label for="organization">Business/Organization Name *</label>
+                <input type="text" id="organization" name="organization" autocomplete="organization" required title="Official legal name of business">
 
-                <label>Membership Level *
-                    <select name="membershipLevel" required title="Select your desired level of investment">
-                        <option value="" disabled selected>Select a level...</option>
-                        <option value="np">NP Membership (Non-Profit - Free)</option>
-                        <option value="bronze">Bronze Membership</option>
-                        <option value="silver">Silver Membership</option>
-                        <option value="gold">Gold Membership</option>
-                    </select>
-                </label>
+                <label for="membershipLevel">Membership Level *</label>
+                <select id="membershipLevel" name="membershipLevel" required title="Select your desired level of investment">
+                    <option value="" disabled selected>Select a level...</option>
+                    <option value="np">NP Membership (Non-Profit - Free)</option>
+                    <option value="bronze">Bronze Membership</option>
+                    <option value="silver">Silver Membership</option>
+                    <option value="gold">Gold Membership</option>
+                </select>
 
-                <label>Business Description
-                    <textarea name="description" rows="4" title="Brief statement describing your industry or operations"></textarea>
-                </label>
+                <label for="description">Business Description</label>
+                <textarea id="description" name="description" rows="4" title="Brief statement describing your industry or operations"></textarea>
 
                 <input type="hidden" name="timestamp" id="form-timestamp">
 
-                <input type="submit" value="Submit Application" class="submit-btn">
+                <button type="submit" class="submit-btn">Submit Application</button>
             </form>
-        </section>
-
-        <section class="cards-container">
-            <h2>Membership Levels</h2>
-            
-            <div class="membership-card animated-card" style="--delay: 1;">
-                <h3>Non-Profit (NP)</h3>
-                <button type="button" class="info-btn" data-modal="modal-np">Learn Benefits &rarr;</button>
-            </div>
-
-            <div class="membership-card animated-card" style="--delay: 2;">
-                <h3>Bronze Partner</h3>
-                <button type="button" class="info-btn" data-modal="modal-bronze">Learn Benefits &rarr;</button>
-            </div>
-
-            <div class="membership-card animated-card" style="--delay: 3;">
-                <h3>Silver Partner</h3>
-                <button type="button" class="info-btn" data-modal="modal-silver">Learn Benefits &rarr;</button>
-            </div>
-
-            <div class="membership-card animated-card" style="--delay: 4;">
-                <h3>Gold Partner</h3>
-                <button type="button" class="info-btn" data-modal="modal-gold">Learn Benefits &rarr;</button>
-            </div>
         </section>
     </main>
 

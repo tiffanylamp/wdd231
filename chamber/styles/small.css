@@ -336,15 +336,13 @@ footer p {
 .form-container form {
     display: flex;
     flex-direction: column;
-    gap: 1.25rem;
+    gap: 0.5rem;
 }
 
 .form-container label {
-    display: flex;
-    flex-direction: column;
     font-weight: bold;
     color: #1e4620;
-    gap: 0.4rem;
+    margin-top: 0.75rem;
 }
 
 .form-container input[type="text"],
@@ -358,10 +356,12 @@ footer p {
     font-size: 1rem;
     font-family: inherit;
     width: 100%;
+    display: block;
 }
 
-.form-container input:required {
-    border-left: 4px solid #b22222; /* Easy sensory hint for required entry items */
+.form-container input:required,
+.form-container select:required {
+    border-left: 4px solid #b22222;
 }
 
 .submit-btn {
@@ -373,7 +373,9 @@ footer p {
     border-radius: 4px;
     cursor: pointer;
     font-size: 1.1rem;
+    margin-top: 1.5rem;
     transition: background-color 0.2s;
+    width: 100%;
 }
 
 .submit-btn:hover {
