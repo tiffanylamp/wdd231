@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xander Sports and Country Club - Site Plan</title>
+    <meta name="description" content="Detailed development, design, and content planning document for the Xander Sports and Country Club portfolio web project.">
+    <meta name="author" content="Tiffany Lalampaa">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;1,400&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="siteplan.css">
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>Xander Sports and Country Club</h1>
+            <p><strong>Course Project Site Plan</strong> | WDD 231 Frontend Web Development</p>
+        </header>
+
+        <main>
+            <section>
+                <h2>Site Name</h2>
+                <p><strong>Selected Name:</strong> Xander Sports and Country Club</p>
+                <p><strong>Reasoning:</strong> The name evokes a sense of high-end prestige, timeless luxury, and exclusivity. 
+                    It clearly defines the site's scope as an all-encompassing sports community highlighting both premium golf assets 
+                    and state-of-the-art aquatics facilities while framing it within a professional country club ecosystem.</p>
+                <p><strong>Proposed Domain:</strong> <code>xanderclub.org</code></p>
+            </section>
+
+            <section>
+                <h2>Site Purpose</h2>
+                <p>It showcases our luxury facilities and gives real-time updates on daily club operations, 
+                    like live swimming pool temperatures and golf course availability. Displays Interactive Rosters: It uses JavaScript 
+                    to instantly pull in and filter a directory of 15+ elite coaches, trainers, and fitness clinics based on what the user 
+                    wants to see. Enhances User Experience: It features interactive pop-up boxes (modals) for deep-dive details, remembers 
+                    user preferences (like a preferred sport dashboard) using browser storage, and includes a seamless, step-by-step membership application form.</p>
+            </section>
+
+            <section>
+                <h2>Target Audience &amp; User Scenarios</h2>
+                <p>The target audience encompasses current high-net-worth members seeking streamlined booking updates, 
+                    and competitive regional athletes looking to join an elite athletic facility for professional golf coaching or club swim squads.</p>
+                
+                <h3>Scenario 1: Prospective Member Analysis</h3>
+                <p><em>"I am looking to enroll my children in a structured, competitive swim club and want to review the exact background, 
+                    metrics, and coaching profiles of the club’s aquatics staff before applying."</em></p>
+                
+                <h3>Scenario 2: Current Active Golfer Analysis</h3>
+                <p><em>"What specialized clinics or short-game golf programs are currently hosted by club pros this season, 
+                    and how can I see explicit schedule availability right now?"</em></p>
+            </section>
+
+            <section>
+                <h2>Color Scheme</h2>
+                <p>The palette relies on deep corporate and maritime tones combined with high-contrast organic accents to 
+                    establish an accessible, luxury aesthetic across all modules.</p>
+                
+                <div class="palette">
+                    <div class="swatch swatch-primary">Primary Navy<br>#0B2545<br>(Headers / Nav Background)</div>
+                    <div class="swatch swatch-secondary">Secondary Slate<br>#134074<br>(Sub-headings / Cards)</div>
+                    <div class="swatch swatch-highlight">Club Green Accent<br>#007F5F<br>(Borders / CTA Buttons)</div>
+                    <div class="swatch swatch-dark">Charcoal Body<br>#1F2421<br>(High Contrast Text)</div>
+                    <div class="swatch swatch-light">Off-White Base<br>#F4F6F9<br>(Main Site Background)</div>
+                </div>
+                <!-- <p><strong>Usage Policy:</strong> High contrast ratios are mathematically enforced across all text modules to achieve safe AA/AAA accessibility baselines via the WAVE auditing standard.</p> -->
+            </section>
+
+            <section>
+                <h2>Typography</h2>
+                <h3>Heading Font: 'Playfair Display' (Serif)</h3>
+                <p class="heading-sample">Used exclusively for main page headings (H1, H2) to cultivate a prestigious, traditional country club tone.</p>
+                
+                <h3>Body Font: 'Inter' (Sans-Serif)</h3>
+                <p class="body-sample">Used for all navigational elements, information grids, descriptions, form modules, and metadata components to secure perfect structural legibility across compact viewports.</p>
+            </section>
+
+            <section>
+                <h2>Home Page Wireframes</h2>
+                <!-- <p>The interface maps out clean structural layouts optimizing content scanning speeds without triggering layout shifts (CLS).</p> -->
+                
+                <div class="wireframe-container">
+                    <div class="wireframe-box">
+                        <h3>Mobile Layout (320px Viewport)</h3>
+                        <div class="wf-element wf-nav-desktop">
+                            <span>[Logo]</span>
+                            <span>[☰ Menu Icon]</span>
+                        </div>
+                        <div class="wf-element wf-hero-mobile">[Hero Banner Area &amp; CTA Button]</div>
+                        <div class="wf-element">[Dynamic Status Widget: Pool Temp / Green Conditions]</div>
+                        <div class="wf-element wf-card-mobile">[Amenity Grid Item 1 - Golf]</div>
+                        <div class="wf-element wf-card-mobile">[Amenity Grid Item 2 - Aquatics]</div>
+                        <div class="wf-element">[Footer &amp; Video Review Link]</div>
+                    </div>
+
+                    <div class="wireframe-box">
+                        <h3>Desktop Layout (Large Screens)</h3>
+                        <div class="wf-element wf-nav-desktop">
+                            <span>[Logo Text]</span>
+                            <span>Home &nbsp;&nbsp; Amenities &nbsp;&nbsp; Apply &nbsp;&nbsp; [Theme Toggle]</span>
+                        </div>
+                        <div class="wf-element wf-hero-desktop">[Full Width Hero Overlay &amp; Core Club Statement]</div>
+                        <div class="wf-grid-3">
+                            <div class="wf-element wf-pane">[Status Component]</div>
+                            <div class="wf-element wf-pane">[Local Preferences UI]</div>
+                            <div class="wf-element wf-pane">[Join CTA]</div>
+                        </div>
+                        <div class="wf-grid-3">
+                            <div class="wf-element wf-card-desktop">[Golf Course Summary]</div>
+                            <div class="wf-element wf-card-desktop">[Aquatics Center Info]</div>
+                            <div class="wf-element wf-card-desktop">[Dining / Clubhouse]</div>
+                        </div>
+                        <div class="wf-element">[Footer Layout - Attributions - Video Audit Navigation Link]</div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>&copy; 2026 | Tiffany Lalampaa | WDD 231 Final Project Architecture Framework Document.</p>
+        </footer>
+    </div>
+
+</body>
+</html>

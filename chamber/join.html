@@ -42,92 +42,92 @@
         </nav>
     </header>
 
-<main class="join-grid">
-    <section class="form-container">
-        <h2>Membership Application</h2>
-        <form method="get" action="thankyou.html">
+    <main class="join-grid">
+        <section class="form-container">
+            <h2>Membership Application</h2>
+            <form method="get" action="thankyou.html">
+                
+                <div class="form-item">
+                    <label for="firstName">First Name *</label>
+                    <input type="text" id="firstName" name="firstName" autocomplete="given-name" required title="Applicant's given name">
+                </div>
+
+                <div class="form-item">
+                    <label for="lastName">Last Name *</label>
+                    <input type="text" id="lastName" name="lastName" autocomplete="family-name" required title="Applicant's family name">
+                </div>
+
+                <div class="form-item">
+                    <label for="orgTitle">Organizational Title</label>
+                    <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title" 
+                        pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters. Letters, spaces, and hyphens only.">
+                </div>
+
+                <div class="form-item">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" autocomplete="email" required placeholder="example@domain.com" title="Valid company or personal email address">
+                </div>
+
+                <div class="form-item">
+                    <label for="phone">Mobile Phone *</label>
+                    <input type="tel" id="phone" name="phone" autocomplete="tel" required title="Applicant's direct contact phone number">
+                </div>
+
+                <div class="form-item">
+                    <label for="organization">Business/Organization Name *</label>
+                    <input type="text" id="organization" name="organization" autocomplete="organization" required title="Official legal name of business">
+                </div>
+
+                <div class="form-item">
+                    <label for="membershipLevel">Membership Level *</label>
+                    <select id="membershipLevel" name="membershipLevel" required title="Select your desired level of investment">
+                        <option value="" disabled selected>Select a level...</option>
+                        <option value="np">NP Membership (Non-Profit - Free)</option>
+                        <option value="bronze">Bronze Membership</option>
+                        <option value="silver">Silver Membership</option>
+                        <option value="gold">Gold Membership</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <label for="description">Business Description</label>
+                    <textarea id="description" name="description" rows="4" title="Brief statement describing your industry or operations"></textarea>
+                </div>
+
+                <input type="hidden" name="timestamp" id="form-timestamp">
+
+                <button type="submit" class="submit-btn">Submit Application</button>
+            </form>
+        </section>
+
+        <section class="cards-container">
+            <h2>Membership Levels</h2>
             
-            <div class="form-item">
-                <label for="firstName">First Name *</label>
-                <input type="text" id="firstName" name="firstName" autocomplete="given-name" required title="Applicant's given name">
+            <div class="membership-card animated-card" style="--delay: 1;">
+                <h3>Non-Profit (NP)</h3>
+                <p>For NGOs & Community Organizations</p>
+                <button type="button" class="info-btn" data-modal="modal-np">Learn Benefits &rarr;</button>
             </div>
 
-            <div class="form-item">
-                <label for="lastName">Last Name *</label>
-                <input type="text" id="lastName" name="lastName" autocomplete="family-name" required title="Applicant's family name">
+            <div class="membership-card animated-card" style="--delay: 2;">
+                <h3>Bronze Partner</h3>
+                <p>Core Networking Options</p>
+                <button type="button" class="info-btn" data-modal="modal-bronze">Learn Benefits &rarr;</button>
             </div>
 
-            <div class="form-item">
-                <label for="orgTitle">Organizational Title</label>
-                <input type="text" id="orgTitle" name="orgTitle" autocomplete="organization-title" 
-                       pattern="[A-Za-z\s-]{7,}" title="Minimum 7 characters. Letters, spaces, and hyphens only.">
+            <div class="membership-card animated-card" style="--delay: 3;">
+                <h3>Silver Partner</h3>
+                <p>Advanced Advertising Tier</p>
+                <button type="button" class="info-btn" data-modal="modal-silver">Learn Benefits &rarr;</button>
             </div>
 
-            <div class="form-item">
-                <label for="email">Email Address *</label>
-                <input type="email" id="email" name="email" autocomplete="email" required placeholder="example@domain.com" title="Valid company or personal email address">
+            <div class="membership-card animated-card" style="--delay: 4;">
+                <h3>Gold Partner</h3>
+                <p>Premium Elite Exposure</p>
+                <button type="button" class="info-btn" data-modal="modal-gold">Learn Benefits &rarr;</button>
             </div>
-
-            <div class="form-item">
-                <label for="phone">Mobile Phone *</label>
-                <input type="tel" id="phone" name="phone" autocomplete="tel" required title="Applicant's direct contact phone number">
-            </div>
-
-            <div class="form-item">
-                <label for="organization">Business/Organization Name *</label>
-                <input type="text" id="organization" name="organization" autocomplete="organization" required title="Official legal name of business">
-            </div>
-
-            <div class="form-item">
-                <label for="membershipLevel">Membership Level *</label>
-                <select id="membershipLevel" name="membershipLevel" required title="Select your desired level of investment">
-                    <option value="" disabled selected>Select a level...</option>
-                    <option value="np">NP Membership (Non-Profit - Free)</option>
-                    <option value="bronze">Bronze Membership</option>
-                    <option value="silver">Silver Membership</option>
-                    <option value="gold">Gold Membership</option>
-                </select>
-            </div>
-
-            <div class="form-item">
-                <label for="description">Business Description</label>
-                <textarea id="description" name="description" rows="4" title="Brief statement describing your industry or operations"></textarea>
-            </div>
-
-            <input type="hidden" name="timestamp" id="form-timestamp">
-
-            <button type="submit" class="submit-btn">Submit Application</button>
-        </form>
-    </section>
-
-    <section class="cards-container">
-        <h2>Membership Levels</h2>
-        
-        <div class="membership-card animated-card" style="--delay: 1;">
-            <h3>Non-Profit (NP)</h3>
-            <p>For NGOs & Community Organizations</p>
-            <button type="button" class="info-btn" data-modal="modal-np">Learn Benefits &rarr;</button>
-        </div>
-
-        <div class="membership-card animated-card" style="--delay: 2;">
-            <h3>Bronze Partner</h3>
-            <p>Core Networking Options</p>
-            <button type="button" class="info-btn" data-modal="modal-bronze">Learn Benefits &rarr;</button>
-        </div>
-
-        <div class="membership-card animated-card" style="--delay: 3;">
-            <h3>Silver Partner</h3>
-            <p>Advanced Advertising Tier</p>
-            <button type="button" class="info-btn" data-modal="modal-silver">Learn Benefits &rarr;</button>
-        </div>
-
-        <div class="membership-card animated-card" style="--delay: 4;">
-            <h3>Gold Partner</h3>
-            <p>Premium Elite Exposure</p>
-            <button type="button" class="info-btn" data-modal="modal-gold">Learn Benefits &rarr;</button>
-        </div>
-    </section>
-</main>
+        </section>
+    </main>
 
     <dialog id="modal-np">
         <button class="close-modal" aria-label="Close modal">&times;</button>

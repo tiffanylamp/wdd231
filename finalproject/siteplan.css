@@ -1,0 +1,190 @@
+/* --- DESIGN SYSTEM COLORS & TYPOGRAPHY --- */
+:root {
+    --primary-color: #0B2545;       /* Deep Luxury Navy */
+    --secondary-color: #134074;     /* Accent Slate Blue */
+    --highlight-color: #007F5F;     /* Emerald Club Green */
+    --text-dark: #1F2421;           /* Off-black for crisp body reading */
+    --bg-light: #F4F6F9;            /* Premium Soft Light Gray */
+    --bg-white: #FFFFFF;
+    
+    --heading-font: 'Playfair Display', Georgia, serif;
+    --body-font: 'Inter', Helvetica, sans-serif;
+}
+
+/* --- BASE STYLES --- */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--text-dark);
+    background-color: var(--bg-light);
+    line-height: 1.6;
+    padding: 2rem 1rem;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: var(--bg-white);
+    padding: 3rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+/* --- TYPOGRAPHY IMPLEMENTATION --- */
+header {
+    border-bottom: 3px solid var(--highlight-color);
+    padding-bottom: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+h1 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+    font-size: 1.75rem;
+    margin-top: 2.5rem;
+    margin-bottom: 1rem;
+    border-left: 5px solid var(--highlight-color);
+    padding-left: 0.75rem;
+}
+
+h3 {
+    font-family: var(--body-font);
+    color: var(--secondary-color);
+    font-size: 1.2rem;
+    margin: 1.5rem 0 0.5rem 0;
+    font-weight: 600;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+ul {
+    margin-bottom: 1.5rem;
+    padding-left: 1.5rem;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+.heading-sample {
+    font-family: var(--heading-font); 
+    font-size: 1.2rem; 
+    font-style: italic;
+}
+
+.body-sample {
+    font-family: var(--body-font);
+}
+
+/* --- COLOR PALETTE DISPLAY SWATCHES --- */
+.palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 1rem;
+    margin: 1.5rem 0;
+}
+
+.swatch {
+    padding: 1.5rem;
+    border-radius: 6px;
+    text-align: center;
+    font-weight: bold;
+    color: #ffffff;
+    box-shadow: inset 0 0 0 1px rgba(0,0,0,0.1);
+}
+
+.swatch-primary { background-color: var(--primary-color); }
+.swatch-secondary { background-color: var(--secondary-color); }
+.swatch-highlight { background-color: var(--highlight-color); }
+.swatch-dark { background-color: var(--text-dark); }
+.swatch-light { background-color: var(--bg-light); color: var(--text-dark); }
+
+/* --- WIREFRAME LAYOUT STYLES --- */
+.wireframe-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 1.5rem;
+}
+
+.wireframe-box {
+    background: #E9ECEF;
+    border: 2px dashed #6C757D;
+    padding: 1rem;
+    border-radius: 6px;
+}
+
+.wf-element {
+    background: #CED4DA;
+    border: 1px solid #ADB5BD;
+    text-align: center;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    font-size: 0.85rem;
+    font-weight: 500;
+    color: #495057;
+}
+
+.wf-nav-desktop {
+    display: flex;
+    justify-content: space-between;
+}
+
+.wf-hero-mobile {
+    padding: 2.5rem 0;
+}
+
+.wf-card-mobile {
+    padding: 1.5rem 0;
+}
+
+.wf-hero-desktop {
+    padding: 4rem 0;
+}
+
+.wf-grid-3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0.25rem;
+}
+
+.wf-pane {
+    padding: 1rem 0;
+}
+
+.wf-card-desktop {
+    padding: 2rem 0;
+}
+
+footer {
+    margin-top: 4rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid #E2E8F0;
+    text-align: center;
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+/* --- RESPONSIVE MEDIA QUERIES --- */
+@media (max-width: 600px) {
+    .container { 
+        padding: 1.5rem; 
+    }
+    h1 { 
+        font-size: 2rem; 
+    }
+}
