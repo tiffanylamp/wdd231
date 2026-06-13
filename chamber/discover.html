@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nairobi Chamber of Commerce - Discover</title>
+    <meta name="description" content="Explore attractions, demographics, and regional updates in Nairobi. Key resources for prospective members.">
+    <meta name="author" content="Tiffany Lalampaa">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-area">
+            <img src="images/nairobi-logo.jpeg" alt="Nairobi Chamber Logo" width="50" height="50">
+            <div>
+                <h1>Nairobi Chamber</h1>
+                <p>of Commerce</p>
+            </div>
+        </div>
+        <button id="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="discover.html" class="active">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div id="visitor-message" class="visitor-banner"></div>
+
+        <section class="discover-hero">
+            <h2>Explore Nairobi</h2>
+            <p>Factual and representative highlights of the vibrant economic hub of East Africa.</p>
+        </section>
+
+        <article id="discover-grid-container">
+            </article>
+    </main>
+
+    <footer>
+        <div class="footer-contact">
+            <h3>Nairobi Chamber of Commerce</h3>
+            <p>10 Harambee Avenue, City Centre</p>
+            <p>Nairobi, Kenya 00100</p>
+            <p>info@nairobichamber.or.ke</p>
+            <p>+254 20 222 1111</p>
+        </div>
+
+        <div class="footer-socials">
+            <a href="https://youtube.com" target="_blank" aria-label="Nairobi Chamber YouTube">▶</a>
+            <a href="https://x.com" target="_blank" aria-label="Nairobi Chamber X Twitter">𝕏</a>
+            <a href="https://linkedin.com" target="_blank" aria-label="Nairobi Chamber LinkedIn">in</a>
+        </div>
+
+        <div class="footer-dev-info">
+            <p>WDD231 Class Project</p>
+            <p>Author: <span>Tiffany Lalampaa</span></p>
+            <p>&copy; <span id="current-year"></span> Nairobi Chamber of Commerce</p>
+            <p>Last Modified: <span id="last-modified"></span></p>
+        </div>
+    </footer>
+
+    <script type="module" src="scripts/discover.js" defer></script>
+</body>
+</html>

@@ -459,3 +459,94 @@ dialog::backdrop {
         transform: translateY(0);
     }
 }
+
+/* ==========================================================================
+   6. DISCOVER PAGE GRID LAYOUT (Mobile: 320px - 640px)
+   ========================================================================== */
+.visitor-banner {
+    background-color: #e8f5e9;
+    color: #1e4620;
+    border: 1px solid #c8e6c9;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 1rem auto;
+    max-width: 90%;
+    border-radius: 4px;
+}
+
+.discover-hero {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    background: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+#discover-grid-container {
+    display: grid;
+    gap: 1.5rem;
+    padding: 1rem;
+    /* Explicit single-column track representation mapping */
+    grid-template-areas:
+        "attraction1"
+        "attraction2"
+        "attraction3"
+        "attraction4"
+        "attraction5"
+        "attraction6"
+        "attraction7"
+        "attraction8";
+}
+
+.discover-card {
+    background: #ffffff;
+    border: 1px solid #e0e0e0;
+    border-radius: 6px;
+    padding: 1.25rem;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.discover-card h2 {
+    margin: 0 0 0.5rem 0;
+    color: #1e4620;
+    font-size: 1.25rem;
+}
+
+.discover-figure {
+    margin: 0 0 1rem 0;
+    overflow: hidden;
+    border-radius: 4px;
+}
+
+.discover-figure img {
+    width: 100%;
+    max-width: 300px;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.discover-card address {
+    font-style: normal;
+    font-weight: bold;
+    color: #c29200;
+    margin: 0.5rem 0;
+}
+
+.discover-card p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    margin: 0.5rem 0 1rem 0;
+}
+
+.learn-more-btn {
+    background-color: #1e4620;
+    color: #ffffff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: bold;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.2s ease;
+}
+
