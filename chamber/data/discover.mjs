@@ -2,7 +2,7 @@ export const attractions = [
     {
         id: "attraction1",
         name: "Nairobi National Park",
-        image: "images/nairobinationalpark.jpg",
+        image: "images/zebras.jpg",
         address: "Langata Road, Nairobi",
         description: "The world's only game reserve located within a major capital city. See lions, rhinos, and leopards framed against skyscrapers."
     },

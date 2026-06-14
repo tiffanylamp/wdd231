@@ -289,27 +289,27 @@ footer p {
     gap: 1.5rem;
     padding: 1rem;
 }
+ /* General page layout */
 
 .hero-block {
     position: relative;
-    text-align: center;
+    width: 100%;
+    overflow: hidden;
+    background-color: #1e4620; /* Deep green fallback */
+}
+
+.hero-block img {
+    display: block;
+    width: 100%;
+    height: auto;
 }
 
 .cta-overlay {
-    background-color: #1e4620;
+    background-color: rgba(30, 70, 32, 0.9); /* Opaque background for great contrast */
     color: #ffffff;
     padding: 1.5rem;
-}
-
-.cta-button {
-    display: block;
-    background-color: #c29200;
-    color: #ffffff;
-    padding: 0.8rem;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 4px;
-    margin-top: 0.5rem;
+    text-align: center;
+    width: 100%;
 }
 
 .home-card {
@@ -425,6 +425,34 @@ footer p {
 .info-btn:hover {
     background: #1e4620;
     color: white;
+}
+
+    /* WEATHER */
+
+/* For weather positioning */
+#current-weather {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    margin: 1rem 0;
+}
+
+#current-weather h3 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+#current-weather img {
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+#current-weather p {
+    margin: 0;
+    text-transform: capitalize;
+    font-weight: 500;
 }
 
 /* Modal Dialog Aesthetics */
