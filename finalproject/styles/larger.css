@@ -1,0 +1,71 @@
+/* --- MULTI COLUMNS SCALING RESPONSIVE STRATEGY FRAMEWORK --- */
+@media screen and (min-width: 641px) {
+    
+    /* Reposition navigation array into an inline horizontal bar block */
+    .nav-toggle {
+        display: none; /* Hide standard mobile click trigger icon */
+    }
+
+    .navigation-bar {
+        display: flex; /* Override collapsed inline block rules safely */
+        flex-direction: row;
+        position: static;
+        width: auto;
+        background: none;
+        box-shadow: none;
+    }
+
+    .nav-link {
+        border-bottom: none;
+        padding: 0.5rem 1.2rem;
+        border-radius: 4px;
+    }
+
+    .nav-link:hover, .nav-link:focus, .nav-link.active {
+        background-color: var(--secondary);
+        border-left: none;
+        box-shadow: inset 0 -3px 0 var(--accent);
+    }
+
+    /* Convert single column stacks into optimized flex and grid matrices */
+    .amenities-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 2rem auto;
+        padding: 0 2rem;
+    }
+
+    .roster-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 2rem;
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 2rem;
+    }
+
+    .hero-block {
+        min-height: 70vh;
+    }
+
+    .hero-overlay h1 {
+        font-size: 3.5rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1.3rem;
+    }
+
+    /* Convert parameter output inside receipt cards into a clean side-by-side split row */
+    .param-row {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .param-key {
+        font-size: 0.95rem;
+    }
+}

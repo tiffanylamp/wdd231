@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application Logged - Xander Country Club</title>
+    <meta name="author" content="Tiffany Lalampaa">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/smaller.css" media="screen">
+    <link rel="stylesheet" href="styles/larger.css" media="screen">
+</head>
+<body>
+
+    <header class="club-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <span class="club-crest">&#9812;</span>
+                <span class="brand-title">Xander Club</span>
+            </div>
+        </div>
+    </header>
+
+    <main class="thanks-main">
+        <section class="receipt-card">
+            <span class="success-icon">&#10004;</span>
+            <h1>Submission Transmitted Successfully</h1>
+            <p>Your member enrollment values have been serialized, parsed, and logged securely.</p>
+            
+            <div class="data-dump-box">
+                <h3>Parsed Entry Folder Parameters:</h3>
+                <div id="paramOutput" class="param-output-grid"></div>
+            </div>
+
+            <a href="index.html" class="return-home-btn">Return to Base Dashboard</a>
+        </section>
+    </main>
+
+    <script type="module">
+        // Client URL Search Param parsing architecture
+        const parameterString = window.location.search;
+        const urlVariables = new URLSearchParams(parameterString);
+        const layoutTarget = document.getElementById('paramOutput');
+
+        let displayBuffer = "";
+        
+        // Loop map parameters systematically
+        urlVariables.forEach((value, key) => {
+            // Convert camelCase tracking keys to clean semantic text keys
+            let formattedKey = key.replace(/([A-Z])/g, ' $1').trim();
+            formattedKey = formattedKey.charAt(0).toUpperCase() + formattedKey.slice(1);
+            
+            displayBuffer += `
+                <div class="param-row">
+                    <strong class="param-key">${formattedKey}:</strong>
+                    <span class="param-value">${decodeURIComponent(value.replace(/\+/g, ' '))}</span>
+                </div>
+            `;
+        });
+
+        layoutTarget.innerHTML = displayBuffer || "<p class='error'>No operational configuration fields detected.</p>";
+    </script>
+</body>
+</html>
