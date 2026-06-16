@@ -1,0 +1,137 @@
+[
+  {
+    "id": 1,
+    "name": "Coach Alexander Mercer",
+    "role": "Head PGA Golf Professional",
+    "specialty": "Swing Biomechanics & Precision Iron Play",
+    "experience": "14 Years",
+    "status": "Available",
+    "bio": "Alexander certified with the PGA Elite tier. He specializes in high-speed video capture analysis and micro-adjusting elite amateur swing metrics."
+  },
+  {
+    "id": 2,
+    "name": "Dr. Elena Rostova",
+    "role": "Master Aquatics Director",
+    "specialty": "Olympic Stroke Refinement & Endurance",
+    "experience": "11 Years",
+    "status": "Available",
+    "bio": "Elena coached regional squads to world championship qualifiers. Her training regimens focus on hydro-dynamic efficiency and threshold cardio."
+  },
+  {
+    "id": 3,
+    "name": "Marcus Vance",
+    "role": "Senior Short Game Specialist",
+    "specialty": "Wedge Trajectory & Green Reading",
+    "experience": "9 Years",
+    "status": "In Session",
+    "bio": "Marcus focuses on the critical 100-yard scoring zone. He implements a data-driven short game approach modeled on major championship standards."
+  },
+  {
+    "id": 4,
+    "name": "Sarah Jenkins",
+    "role": "Junior Development Lead",
+    "specialty": "Youth High-Performance Coaching",
+    "experience": "7 Years",
+    "status": "Available",
+    "bio": "Sarah structures foundational athletic profiles for younger club members, specializing in accelerated skill acquisition frameworks."
+  },
+  {
+    "id": 5,
+    "name": "David Kiptoo",
+    "role": "Strength & Conditioning Coach",
+    "specialty": "Rotational Power & Core Stability",
+    "experience": "12 Years",
+    "status": "Available",
+    "bio": "David configures physical optimization paths tailored to golfers and high-velocity swimmers, reducing injury vectors."
+  },
+  {
+    "id": 6,
+    "name": "Amara Sterling",
+    "role": "Elite High-Performance Coach",
+    "specialty": "Advanced Butterfly & Sprint Mechanics",
+    "experience": "8 Years",
+    "status": "In Session",
+    "bio": "Amara leverages digital motion-tracking tech to correct entry angles and underwater recovery speeds for club competitors."
+  },
+  {
+    "id": 7,
+    "name": "Thomas Hayes",
+    "role": "Senior Course Strategist",
+    "specialty": "Mental Mapping & Course Management",
+    "experience": "16 Years",
+    "status": "Available",
+    "bio": "Thomas trains players how to construct competitive tournament course notes, optimize target paths, and manage high-stress match frames."
+  },
+  {
+    "id": 8,
+    "name": "Chloe Vance",
+    "role": "Aquatics Physical Therapist",
+    "specialty": "Hydro-Rehabilitation & Mobility Work",
+    "experience": "6 Years",
+    "status": "Available",
+    "bio": "Chloe implements safe recovery programs inside our climate-controlled pool systems, restoring peak shoulder rotation profiles."
+  },
+  {
+    "id": 9,
+    "name": "Michael Zhao",
+    "role": "PGA Putting Specialist",
+    "specialty": "Vector Green Reading & Putter Fitting",
+    "experience": "10 Years",
+    "status": "In Session",
+    "bio": "Michael integrates laser alignment modules to assess face orientation metrics at impact down to fractions of a degree."
+  },
+  {
+    "id": 10,
+    "name": "Sophia Martinez",
+    "role": "Nutrition & Performance Advisor",
+    "specialty": "Metabolic Optimization & Tournament Fueling",
+    "experience": "8 Years",
+    "status": "Available",
+    "bio": "Sophia designs targeted fuel systems for long-duration match plays and rapid recovery sequences across intensive multisport sets."
+  },
+  {
+    "id": 11,
+    "name": "Robert Vance",
+    "role": "Director of Tennis Operations",
+    "specialty": "High-Velocity Serving & Court Mechanics",
+    "experience": "15 Years",
+    "status": "Available",
+    "bio": "Robert manages our championship-tier courts and specializes in optimizing biomechanical torque output on top-spin groundstrokes."
+  },
+  {
+    "id": 12,
+    "name": "Lily Chen",
+    "role": "Junior Aquatics Coach",
+    "specialty": "Foundational Breathing & Water Safety",
+    "experience": "5 Years",
+    "status": "Available",
+    "bio": "Lily builds structural confidence programs for young athletes, prioritizing stroke mechanics before introducing high-volume intervals."
+  },
+  {
+    "id": 13,
+    "name": "James Sinclair",
+    "role": "Custom Club Fitter & Builder",
+    "specialty": "Launch Monitor Metrics Optimization",
+    "experience": "13 Years",
+    "status": "Available",
+    "bio": "James reads dynamic data streams from TrackMan systems to build tailor-made shafts and clubheads matching unique swing speeds."
+  },
+  {
+    "id": 14,
+    "name": "Nadia Volkov",
+    "role": "Synchronized Swimming Master",
+    "specialty": "Artistic Fluidity & Choreographic Pacing",
+    "experience": "10 Years",
+    "status": "Available",
+    "bio": "Nadia directs advanced performance tracks, optimizing lung capacity control and high-degree positional execution rules."
+  },
+  {
+    "id": 15,
+    "name": "Arthur Pendelton",
+    "role": "Club Historian & Rules Arbitrator",
+    "specialty": "USGA & R&A Governance Standards",
+    "experience": "22 Years",
+    "status": "Available",
+    "bio": "Arthur chairs tournament systems and handles intricate rules interpretations, maintaining strict fidelity to global sporting law."
+  }
+]

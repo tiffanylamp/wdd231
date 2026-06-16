@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xander Sports and Country Club - Premium Elite Athletic Hub</title>
+    <meta name="description" content="Welcome to Xander Sports and Country Club. Explore elite golf clinics, advanced aquatics arrays, and world-class sports performance coaching in Nairobi.">
+    <meta name="author" content="Tiffany Lalampaa">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Xander Sports and Country Club - Elite Athletic Hub">
+    <meta property="og:description" content="Discover professional golf coaching, high-efficiency aquatics, and modern fitness facilities tailored for elite athletes.">
+    <meta property="og:image" content="images/ogsiteview.jpg">
+    <meta property="og:url" content="https://tiffanylamp.github.io/wdd231/finalproject/index.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/smaller.css" media="screen">
+    <link rel="stylesheet" href="styles/larger.css" media="screen">
+</head>
+<body>
+
+    <header class="club-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <span class="club-crest">&#9812;</span>
+                <span class="brand-title">Xander Club</span>
+            </div>
+            <button class="nav-toggle" id="menuBtn" aria-label="Toggle Navigation Menu">&#9776;</button>
+            <nav class="navigation-bar" id="navBar">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="directory.html" class="nav-link">Roster Directory</a>
+                <a href="apply.html" class="nav-link">Join Club</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="home-main">
+        <section class="hero-block">
+            <div class="hero-overlay">
+                <h1>Where Precision Meets Luxury</h1>
+                <p>Nairobi's ultimate domain for competitive golf development and high-performance aquatics training tracks.</p>
+                <a href="apply.html" class="cta-button">Apply For Membership</a>
+            </div>
+        </section>
+
+        <section class="dashboard-widget">
+            <h2>Your Custom Workspace</h2>
+            <p>Select your primary athletic track to modify your client view state metrics dynamically:</p>
+            <div class="preference-controls">
+                <button class="pref-btn" data-sport="golf">⛳ Golf Focus Mode</button>
+                <button class="pref-btn" data-sport="aquatics">🏊 Aquatics Focus Mode</button>
+                <button class="pref-btn" data-sport="all">🔄 Reset Display Matrix</button>
+            </div>
+            <div class="status-panel" id="statusMessage">
+                Welcome back. Select an interest to persist your dashboard look across visits.
+            </div>
+        </section>
+
+        <section class="amenities-grid">
+            <div class="amenity-card">
+                <div class="card-image-fallback">⛳</div>
+                <h3>Championship Golf Facility</h3>
+                <p>An intricate 18-hole blueprint combining strict hazards, professional bentgrass fairways, and laser-guided track analysis bays.</p>
+            </div>
+            <div class="amenity-card">
+                <div class="card-image-fallback">🏊</div>
+                <h3>Olympic Aquatics Arena</h3>
+                <p>Ten climate-controlled lanes featuring high-speed digital motion feedback, optimized starting points, and expert swim squad pacing.</p>
+            </div>
+            <div class="amenity-card">
+                <div class="card-image-fallback">🍷</div>
+                <h3>The Club Room Lounge</h3>
+                <p>Five-star curated recovery spaces, fine dining, private strategy lounges, and community networking events for premier members.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer class="club-footer">
+        <p>&copy; 2026 | Tiffany Lalampaa | Nairobi, Kenya | WDD 231 Final Project Artifact</p>
+        <p><a href="https://github.com/tiffanylamp/wdd231" target="_blank" class="footer-link">GitHub Repository Subfolder Workspace</a></p>
+    </footer>
+
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>

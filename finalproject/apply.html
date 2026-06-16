@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Membership Enrollment - Xander Country Club</title>
+    <meta name="description" content="Submit your digital application folder for corporate, family, or individual sports tier entry to Xander Club.">
+    <meta name="author" content="Tiffany Lalampaa">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/smaller.css" media="screen">
+    <link rel="stylesheet" href="styles/larger.css" media="screen">
+</head>
+<body>
+
+    <header class="club-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <span class="club-crest">&#9812;</span>
+                <span class="brand-title">Xander Club</span>
+            </div>
+            <button class="nav-toggle" id="menuBtn" aria-label="Toggle Navigation Menu">&#9776;</button>
+            <nav class="navigation-bar" id="navBar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="directory.html" class="nav-link">Roster Directory</a>
+                <a href="apply.html" class="nav-link active">Join Club</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="form-main">
+        <section class="form-container-box">
+            <h1>Membership Application</h1>
+            <p>Please enter your data parameters below. All credentials are fully verified at submission.</p>
+
+            <form action="thanks.html" method="get" class="enrollment-form">
+                <label class="input-block">
+                    <span>Full Legal Name *</span>
+                    <input type="text" name="applicantName" required autocomplete="name" placeholder="John Doe">
+                </label>
+
+                <label class="input-block">
+                    <span>Email Address *</span>
+                    <input type="email" name="applicantEmail" required autocomplete="email" placeholder="john@example.com">
+                </label>
+
+                <label class="input-block">
+                    <span>Contact Number *</span>
+                    <input type="tel" name="applicantPhone" required autocomplete="tel" placeholder="+254 700 000000">
+                </label>
+
+                <label class="input-block">
+                    <span>Desired Membership Classification *</span>
+                    <select name="tierSelection" required>
+                        <option value="">-- Choose Tier Array --</option>
+                        <option value="Premier Corporate">Premier Corporate Entry</option>
+                        <option value="Elite Family Suite">Elite Family Multi-Sport</option>
+                        <option value="Individual Athlete">Individual Athlete Track</option>
+                    </select>
+                </label>
+
+                <label class="input-block">
+                    <span>Primary Sport System Matrix *</span>
+                    <select name="primarySport" required>
+                        <option value="">-- Choose Primary Focus --</option>
+                        <option value="Championship Golf">Championship Golf Track</option>
+                        <option value="Olympic Aquatics">Olympic Aquatics Array</option>
+                        <option value="Dual Sport Performance">Dual Sport Portfolio</option>
+                    </select>
+                </label>
+
+                <button type="submit" class="form-submit-button">Secure Application Folder</button>
+            </form>
+        </section>
+    </main>
+
+    <footer class="club-footer">
+        <p>&copy; 2026 | Tiffany Lalampaa | Nairobi, Kenya | WDD 231 Final Project Artifact</p>
+    </footer>
+
+    <script src="scripts/main.js" type="module"></script>
+</body>
+</html>

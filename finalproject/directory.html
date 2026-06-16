@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite Professional Directory - Xander Country Club</title>
+    <meta name="description" content="Meet our 15+ world-class athletic trainers and PGA golf professionals. Filter backgrounds and view availability charts in real-time.">
+    <meta name="author" content="Tiffany Lalampaa">
+    <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+
+    <meta property="og:title" content="Xander Club - Professional Directory Matrix">
+    <meta property="og:description" content="Filter through our expert coaching staff. View detailed qualifications using interactive modal interfaces.">
+    <meta property="og:image" content="images/ogsiteview.jpg">
+    <meta property="og:url" content="https://tiffanylamp.github.io/wdd231/finalproject/directory.html">
+    <meta property="og:type" content="website">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="styles/smaller.css" media="screen">
+    <link rel="stylesheet" href="styles/larger.css" media="screen">
+</head>
+<body>
+
+    <header class="club-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <span class="club-crest">&#9812;</span>
+                <span class="brand-title">Xander Club</span>
+            </div>
+            <button class="nav-toggle" id="menuBtn" aria-label="Toggle Navigation Menu">&#9776;</button>
+            <nav class="navigation-bar" id="navBar">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="directory.html" class="nav-link active">Roster Directory</a>
+                <a href="apply.html" class="nav-link">Join Club</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="directory-main">
+        <header class="section-heading">
+            <h1>Elite Training Roster</h1>
+            <p>Asynchronously rendered data stream profiles of our active athletic coaching unit.</p>
+            
+            <div class="filter-controls">
+                <button class="filter-btn active" data-filter="all">All Professionals</button>
+                <button class="filter-btn" data-filter="Golf">Golf Unit</button>
+                <button class="filter-btn" data-filter="Aquatics">Aquatics Unit</button>
+            </div>
+        </header>
+
+        <section class="roster-grid" id="rosterContainer"></section>
+
+        <dialog class="info-modal" id="detailsModal">
+            <div class="modal-wrapper">
+                <button class="close-modal-btn" id="closeModal" aria-label="Close details dialog">&times;</button>
+                <div class="modal-body-content" id="modalContent">
+                    </div>
+            </div>
+        </dialog>
+    </main>
+
+    <footer class="club-footer">
+        <p>&copy; 2026 | Tiffany Lalampaa | Nairobi, Kenya | WDD 231 Final Project Artifact</p>
+    </footer>
+
+    <script src="scripts/main.js" type="module"></script>
+    <script src="scripts/roster.js" type="module"></script>
+</body>
+</html>
