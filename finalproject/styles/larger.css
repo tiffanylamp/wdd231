@@ -3,11 +3,11 @@
     
     /* Reposition navigation array into an inline horizontal bar block */
     .nav-toggle {
-        display: none; /* Hide standard mobile click trigger icon */
+        display: none; 
     }
 
     .navigation-bar {
-        display: flex; /* Override collapsed inline block rules safely */
+        display: flex; 
         flex-direction: row;
         position: static;
         width: auto;

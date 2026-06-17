@@ -1,10 +1,10 @@
 /* --- COMPREHENSIVE DESIGN FRAMEWORK ROOT VARIABLES --- */
 :root {
-    --primary: #0B2545;        /* Deep Luxury Navy Base */
-    --secondary: #134074;      /* Midtone Royal Steel */
-    --accent: #007F5F;         /* High Contrast Emerald Club Green */
-    --text-dark: #1F2421;      /* Clean High Contrast Dark Charcoal Text (Passes WCAG AA easily) */
-    --bg-light: #F4F6F9;       /* Premium Clean Off-White */
+    --primary: #0B2545;        
+    --secondary: #134074;      
+    --accent: #007F5F;        
+    --text-dark: #1F2421;     
+    --bg-light: #F4F6F9;       
     --bg-white: #FFFFFF;
     
     --serif-font: 'Playfair Display', Georgia, serif;
@@ -71,7 +71,7 @@ body {
     font-size: 1.8rem;
     cursor: pointer;
     padding: 0.25rem;
-    display: block; /* Visible by default on mobile devices */
+    display: block;
     transition: var(--transition-speed);
 }
 
