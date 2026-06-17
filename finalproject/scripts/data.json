@@ -1,7 +1,7 @@
 [
   {
     "id": 1,
-    "name": "Coach Alexander Mercer",
+    "name": "Coach Alexander Baraka",
     "role": "Head PGA Golf Professional",
     "specialty": "Swing Biomechanics & Precision Iron Play",
     "experience": "14 Years",
@@ -19,7 +19,7 @@
   },
   {
     "id": 3,
-    "name": "Marcus Vance",
+    "name": "Marcus Aurelius",
     "role": "Senior Short Game Specialist",
     "specialty": "Wedge Trajectory & Green Reading",
     "experience": "9 Years",
@@ -28,7 +28,7 @@
   },
   {
     "id": 4,
-    "name": "Sarah Jenkins",
+    "name": "Sarah Chebs",
     "role": "Junior Development Lead",
     "specialty": "Youth High-Performance Coaching",
     "experience": "7 Years",
@@ -46,7 +46,7 @@
   },
   {
     "id": 6,
-    "name": "Amara Sterling",
+    "name": "Amara Hope",
     "role": "Elite High-Performance Coach",
     "specialty": "Advanced Butterfly & Sprint Mechanics",
     "experience": "8 Years",
@@ -55,7 +55,7 @@
   },
   {
     "id": 7,
-    "name": "Thomas Hayes",
+    "name": "Thomas Gent",
     "role": "Senior Course Strategist",
     "specialty": "Mental Mapping & Course Management",
     "experience": "16 Years",
@@ -64,7 +64,7 @@
   },
   {
     "id": 8,
-    "name": "Chloe Vance",
+    "name": "Chloe Maina",
     "role": "Aquatics Physical Therapist",
     "specialty": "Hydro-Rehabilitation & Mobility Work",
     "experience": "6 Years",
@@ -73,7 +73,7 @@
   },
   {
     "id": 9,
-    "name": "Michael Zhao",
+    "name": "Allan Zhao",
     "role": "PGA Putting Specialist",
     "specialty": "Vector Green Reading & Putter Fitting",
     "experience": "10 Years",
@@ -82,7 +82,7 @@
   },
   {
     "id": 10,
-    "name": "Sophia Martinez",
+    "name": "Sophia Naisula",
     "role": "Nutrition & Performance Advisor",
     "specialty": "Metabolic Optimization & Tournament Fueling",
     "experience": "8 Years",
@@ -100,7 +100,7 @@
   },
   {
     "id": 12,
-    "name": "Lily Chen",
+    "name": "Lily Kwamboka",
     "role": "Junior Aquatics Coach",
     "specialty": "Foundational Breathing & Water Safety",
     "experience": "5 Years",
@@ -109,7 +109,7 @@
   },
   {
     "id": 13,
-    "name": "James Sinclair",
+    "name": "James Nyaboke",
     "role": "Custom Club Fitter & Builder",
     "specialty": "Launch Monitor Metrics Optimization",
     "experience": "13 Years",
@@ -118,7 +118,7 @@
   },
   {
     "id": 14,
-    "name": "Nadia Volkov",
+    "name": "Nadia Kimani",
     "role": "Synchronized Swimming Master",
     "specialty": "Artistic Fluidity & Choreographic Pacing",
     "experience": "10 Years",
@@ -127,7 +127,7 @@
   },
   {
     "id": 15,
-    "name": "Arthur Pendelton",
+    "name": "Arthur Kariuki",
     "role": "Club Historian & Rules Arbitrator",
     "specialty": "USGA & R&A Governance Standards",
     "experience": "22 Years",
