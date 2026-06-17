@@ -3,7 +3,7 @@
     --primary: #0B2545;        
     --secondary: #134074;      
     --accent: #007F5F;        
-    --text-dark: #1F2421;     
+    --text-dark: #1F2421;      /* Clean High Contrast Dark Charcoal Text (Passes WCAG AA easily) */
     --bg-light: #F4F6F9;       
     --bg-white: #FFFFFF;
     
@@ -71,7 +71,7 @@ body {
     font-size: 1.8rem;
     cursor: pointer;
     padding: 0.25rem;
-    display: block;
+    display: block; /* Visible by default on mobile devices */
     transition: var(--transition-speed);
 }
 
@@ -238,7 +238,7 @@ body {
 .section-heading h1 {
     font-family: var(--serif-font);
     color: var(--primary);
-    font-size: 2rem;
+    font-size: 2rem; 
 }
 
 .filter-controls {
@@ -389,6 +389,7 @@ body {
 .form-container-box h1 {
     font-family: var(--serif-font);
     color: var(--primary);
+    font-size: 2rem; 
     margin-bottom: 0.5rem;
 }
 
