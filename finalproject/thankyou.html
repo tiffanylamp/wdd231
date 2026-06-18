@@ -3,55 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Application Received - Thank You</title>
-    <meta name="description" content="Thank you for submitting your application. Your form data has been successfully processed.">
+    <title>Application Received - Xander Country Club</title>
+    <meta name="description" content="Your membership application folder has been successfully received, serialized, and logged by the Xander Club admissions unit.">
     <meta name="author" content="Tiffany Lalampaa">
-    
-    <!-- Favicon -->
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
-    <!-- Open Graph Metadata -->
-    <meta property="og:title" content="Application Submitted Successfully">
-    <meta property="og:description" content="Thank you for submitting your application. Your form data has been successfully processed.">
-    <meta property="og:image" content="https://tiffanylamp.github.io/wdd231/finalproject/images/ogsiteview.webp">
-    <meta property="og:url" content="https://tiffanylamp.github.io/wdd231/finalproject/thanks.html">
-
-    <!-- Google Fonts Links (Do not use @import in CSS) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght=400;500;600&family=Playfair+Display:wght=600;700&display=swap" rel="stylesheet">
 
-    
     <link rel="stylesheet" href="styles/smaller.css">
-    <link rel="stylesheet" href="styles/larger.css">
+    <link rel="stylesheet" href="styles/larger.css" media="screen and (min-width: 641px)">
 </head>
 <body>
-    <header>
-        
-        <nav>
-            <button id="menuButton" aria-label="Toggle Menu">&#9776;</button>
-            <ul class="nav-menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="directory.html">Directory</a></li>
-                <li><a href="apply.html">Apply</a></li>
-            </ul>
-        </nav>
+
+    <header class="club-header">
+        <div class="header-container">
+            <div class="logo-area">
+                <span class="club-crest">&#9812;</span>
+                <span class="brand-title">Xander Club</span>
+            </div>
+        </div>
     </header>
 
-    <main>
-        <h1>Thank You for Your Application!</h1>
-        <p>We have successfully received your submission details:</p>
-        
-       
-        <div id="formSummary"></div>
+    <main class="thanks-main">
+        <section class="receipt-card">
+            <span class="success-icon">&#10004;</span>
+            <h1>Thank You for Your Application!</h1>
+            <p>We have successfully received your submission details. Your application has been parsed and logged securely into our roster queue.</p>
+            
+            <div class="data-dump-box">
+                <h3>Submitted Application Details:</h3>
+                <div id="paramOutput" class="param-output-grid"></div>
+            </div>
+
+            <a href="index.html" class="return-home-btn">Return to Home Dashboard</a>
+        </section>
     </main>
 
-    <footer>
-        <p>&copy; 2026 Tiffany Lalampaa | WDD 231 Final Project</p>
+    <footer class="club-footer">
+        <div class="footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 | Tiffany Lalampaa | Nairobi, Kenya | WDD 231 Final Project</p>
+            </div>
+            <div class="footer-right">
+                <a href="https://linkedin.com" target="_blank" rel="noopener" class="social-link" aria-label="LinkedIn">LinkedIn</a>
+                <a href="https://github.com/tiffanylamp" target="_blank" rel="noopener" class="social-link" aria-label="GitHub">GitHub</a>
+                <a href="https://x.com" target="_blank" rel="noopener" class="social-link" aria-label="X Social">X</a>
+            </div>
+        </div>
     </footer>
 
-    
-    <script src="js/main.js" type="module"></script>
-    <script src="js/thanks.js" type="module"></script>
+    <script src="scripts/thanks.js" type="module"></script>
 </body>
 </html>
