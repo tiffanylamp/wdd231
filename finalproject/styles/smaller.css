@@ -464,7 +464,7 @@ body {
     border-left: 4px solid var(--accent);
 }
 
-.data-dump-box h3 {
+.data-dump-box h2 {
     margin-bottom: 1rem;
     color: var(--primary);
     font-size: 1.05rem;
