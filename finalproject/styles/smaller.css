@@ -115,7 +115,7 @@ body {
 
 /* --- HOME INTERFACE LAYOUT TRACK --- */
 .hero-block {
-    background: linear-gradient(rgba(11, 37, 69, 0.75), rgba(11, 37, 69, 0.85)), url('../images/sitehero.jpg') center/cover no-repeat #0b2545;
+    background: linear-gradient(rgba(11, 37, 69, 0.75), rgba(11, 37, 69, 0.85)), url('../images/sitehero.webp') center/cover no-repeat #0b2545;
     min-height: 60vh;
     display: flex;
     align-items: center;
