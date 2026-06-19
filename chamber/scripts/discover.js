@@ -31,8 +31,11 @@ document.addEventListener('DOMContentLoaded', () => {
         container.innerHTML = "";
         attractions.forEach(item => {
             const card = document.createElement('section');
-            card.className = "discover-card";
-            // Map the inline style directly to the ID name for grid placement
+            
+            // CRITICAL FIX: Assign BOTH the generic class AND the unique named grid area class
+            card.className = `discover-card ${item.id}`;
+            
+            // Inline fallback assignment for safety
             card.style.gridArea = item.id;
 
             card.innerHTML = `

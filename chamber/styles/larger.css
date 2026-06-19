@@ -33,6 +33,8 @@
         grid-template-columns: repeat(2, 1fr);
         padding: 2rem;
     }
+
+
 }
 
 /* ==========================================================================
@@ -239,13 +241,13 @@
 @media (min-width: 40.06rem) {
     #discover-grid-container {
         grid-template-columns: 1fr 1fr;
+        /* Layout 2: Balanced double-column layout array matrix */
         grid-template-areas:
             "attraction1 attraction2"
             "attraction3 attraction4"
             "attraction5 attraction6"
             "attraction7 attraction8";
         gap: 2rem;
-        padding: 2rem;
     }
 }
 
@@ -253,7 +255,7 @@
 @media (min-width: 64.06rem) {
     #discover-grid-container {
         grid-template-columns: 1fr 1fr 1fr;
-        /* Custom asymmetrical layout arrangement using the template areas */
+        /* Layout 3: Complex multi-row asymmetrical masonry mapping structure */
         grid-template-areas:
             "attraction1 attraction1 attraction2"
             "attraction3 attraction4 attraction2"

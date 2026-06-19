@@ -44,18 +44,13 @@ header {
     gap: 12px;
 }
 
-.logo-area h1 {
-    margin: 0;
-    font-size: 1.4rem;
+.logo-text {
+    font-size: 1.25rem;
+    font-weight: bold;
     letter-spacing: 0.5px;
+    color: #ffffff;
 }
 
-.logo-area p {
-    margin: 0;
-    font-size: 0.85rem;
-    color: #c29200; /* Warm Sun Ochre Gold */
-    font-weight: bold;
-}
 
 #menu-toggle {
     background: none;
@@ -525,6 +520,15 @@ dialog::backdrop {
         "attraction7"
         "attraction8";
 }
+
+.attraction1 { grid-area: attraction1; }
+.attraction2 { grid-area: attraction2; }
+.attraction3 { grid-area: attraction3; }
+.attraction4 { grid-area: attraction4; }
+.attraction5 { grid-area: attraction5; }
+.attraction6 { grid-area: attraction6; }
+.attraction7 { grid-area: attraction7; }
+.attraction8 { grid-area: attraction8; }
 
 .discover-card {
     background: #ffffff;
