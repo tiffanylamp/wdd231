@@ -210,17 +210,20 @@ body {
     padding: 1.5rem 1rem;
 }
 
+/* 1. Combined Amenity Card Base Styles */
 .amenity-card {
     background: var(--bg-white);
     padding: 2rem 1.5rem;
-    border-radius: 6px;
+    border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
-    border-top: 4px solid var(--secondary);
-}
-
-.card-image-fallback {
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-top: 4px solid var(--secondary); /* Restores your colored top accent bar */
+    text-align: center;
+    
+    /* Smooth transition animation timing engine */
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+                box-shadow 0.3s ease, 
+                border-color 0.3s ease;
 }
 
 .amenity-card h3 {
@@ -229,32 +232,7 @@ body {
     margin-bottom: 0.5rem;
 }
 
-.amenity-card {
-    background-color: var(--bg-white);
-    border: 1px solid #e2e8f0;
-    border-radius: 8px;
-    padding: 2rem 1.5rem;
-    text-align: center;
-    
-    /* The transition tells the browser to animate changes over 0.3 seconds */
-    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
-                box-shadow 0.3s ease, 
-                border-color 0.3s ease;
-}
-
-/* 2. Interactive Hover States */
-.amenity-card:hover {
-    /* Lifts the card slightly along the Y-axis */
-    transform: translateY(-6px);
-    
-    /* Adds a deep, soft luxury shadow depth */
-    box-shadow: 0 12px 30px rgba(11, 37, 69, 0.1);
-    
-    /* Shifts the border slightly to your primary dark/gold color */
-    border-color: var(--primary);
-}
-
-/* 3. Optional: Make the internal emoji/icon react too! */
+/* 2. Icon / Emoji Animation Settings */
 .amenity-card .card-image-fallback {
     font-size: 2.5rem;
     margin-bottom: 1rem;
@@ -262,8 +240,21 @@ body {
     transition: transform 0.3s ease;
 }
 
-.amenity-card:hover .card-image-fallback {
-    /* Gives the icon a gentle pulse scale when the card is hovered */
+/* 3. HTML Link Anchor Reset Rules (PUT THIS RIGHT HERE) */
+.card-anchor-wrapper {
+    text-decoration: none; /* Strips default blue underlines */
+    color: inherit;         /* Prevents text from changing color */
+    display: block;        /* Makes the entire wrapper a clickable block */
+}
+
+/* 4. Interactive Hover States (Triggered cleanly through our wrappers) */
+.card-anchor-wrapper:hover .amenity-card {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(11, 37, 69, 0.1);
+    border-color: var(--primary);
+}
+
+.card-anchor-wrapper:hover .card-image-fallback {
     transform: scale(1.1);
 }
 
@@ -302,15 +293,49 @@ body {
     border-color: var(--primary);
 }
 
+/* Base Roster Card with interactive state transition rules */
 .roster-card {
     background: var(--bg-white);
-    border-radius: 6px;
+    border-radius: 8px; /* Slightly smoother luxury round corner */
     padding: 1.5rem;
     box-shadow: 0 2px 8px rgba(0,0,0,0.05);
     border-left: 5px solid var(--secondary);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    
+    /* Smooth card lift and shadow animation timing engine */
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+                box-shadow 0.3s ease;
+}
+
+/* NEW: Image Box Window Frame Container */
+.card-image-box {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 1rem 0; /* Left aligns the picture box cleanly with your border card flow */
+    border-radius: 50%;     /* Turn into a circle profile, or change to 4px for smooth square grids */
+    overflow: hidden;       /* Rigid frame constraint layer cuts off zoom blowout */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* NEW: Profile Image Setup with scale timing transition */
+.card-image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+/* INTERACTIVE STATE: Card Hover Transforms */
+.roster-card:hover {
+    transform: translateY(-5px); /* Smooth layout elevation lift */
+    box-shadow: 0 12px 25px rgba(11, 37, 69, 0.08); /* Deep modern shadow depth */
+}
+
+/* INTERACTIVE STATE: Triggers the 5% zoom effect on the image when card is hovered */
+.roster-card:hover .card-image-box img {
+    transform: scale(1.05);
 }
 
 .card-role {
