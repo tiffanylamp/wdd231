@@ -229,6 +229,44 @@ body {
     margin-bottom: 0.5rem;
 }
 
+.amenity-card {
+    background-color: var(--bg-white);
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    
+    /* The transition tells the browser to animate changes over 0.3 seconds */
+    transition: transform 0.3s cubic-bezier(0.25, 1, 0.5, 1), 
+                box-shadow 0.3s ease, 
+                border-color 0.3s ease;
+}
+
+/* 2. Interactive Hover States */
+.amenity-card:hover {
+    /* Lifts the card slightly along the Y-axis */
+    transform: translateY(-6px);
+    
+    /* Adds a deep, soft luxury shadow depth */
+    box-shadow: 0 12px 30px rgba(11, 37, 69, 0.1);
+    
+    /* Shifts the border slightly to your primary dark/gold color */
+    border-color: var(--primary);
+}
+
+/* 3. Optional: Make the internal emoji/icon react too! */
+.amenity-card .card-image-fallback {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.amenity-card:hover .card-image-fallback {
+    /* Gives the icon a gentle pulse scale when the card is hovered */
+    transform: scale(1.1);
+}
+
 /* --- DATA DRIVEN ROSTER GRID CARDS TRACK --- */
 .section-heading {
     text-align: center;
